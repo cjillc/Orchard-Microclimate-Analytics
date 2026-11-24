@@ -5,12 +5,12 @@ from src.analyzer import load_baseline, analyze_metrics
 from src.advisor import generate_orchard_advisories
 
 st.set_page_config(
-    page_title="極端天氣分析系統｜果園氣象決策輔助",
+    page_title="極端天氣分析系統",
     page_icon="🌦️",
     layout="wide",
 )
 
-st.title("🌦️ 極端天氣分析系統：果園微氣候與決策輔助平台")
+st.title("🌦️ 極端天氣分析系統")
 st.caption("第七組專題實作｜串接中央氣象署 Open Data API，比對即時觀測與歷年同期氣候基準")
 
 baseline_df = load_baseline("data/historical_baseline.csv")
